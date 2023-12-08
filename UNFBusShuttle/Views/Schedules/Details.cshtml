@@ -1,0 +1,42 @@
+﻿@model UNFBusShuttle.Models.Schedule
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Schedule</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.depTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.depTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.arrTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.arrTime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.destination)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.destination)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.adminCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.adminCode)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.schedId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

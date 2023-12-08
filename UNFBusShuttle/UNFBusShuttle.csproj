@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.25">
       <PrivateAssets>all</PrivateAssets>
@@ -17,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Driver\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\Rider\" />
   </ItemGroup>
