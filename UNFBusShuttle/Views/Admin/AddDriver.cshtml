@@ -1,0 +1,37 @@
+﻿@model UNFBusShuttle.Models.Driver
+
+<h4>Driver</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddDriver">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="fName" class="control-label"></label>
+                <input asp-for="fName" class="form-control" />
+                <span asp-validation-for="fName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="lName" class="control-label"></label>
+                <input asp-for="lName" class="form-control" />
+                <span asp-validation-for="lName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="busNumber" class="control-label"></label>
+                <input asp-for="busNumber" class="form-control" />
+                <span asp-validation-for="busNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

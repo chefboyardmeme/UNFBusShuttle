@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "UNF Live Bus Shuttle";
+}
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2FB0E8; 
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .loginButton {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #FFFFFF;
+            color: #2FB0E8;
+            border: 1px solid #2FB0E8;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #2FB0E8;
+            color: #FFF;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bus-map {
+            width: 100%;
+            height: 400px;
+            background-color: #E5E5E5;
+            text-align: center;
+            line-height: 400px;
+            color: #AAA;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>UNF Live Bus Shuttle</h1>
+        <p>Your real-time guide to UNF campus shuttles.</p>
+        <button class="loginButton" onclick="location.href='@Url.Action("Login","Home")'">Log In</button>
+    </header>
+
+    <section>
+        <h2>Live Bus Tracking</h2>
+        <div class="bus-map">Live Bus Map Placeholder</div>
+    </section>
+
+    <section>
+        <h2>Shuttle Schedule</h2>
+        <p>
+            <strong>Morning:</strong> Every 10 minutes from 7:00am to 11:00am<br>
+            <strong>Afternoon:</strong> Every 15 minutes from 11:00am to 4:00pm<br>
+            <strong>Evening:</strong> Every 20 minutes from 4:00pm to 10:00pm
+        </p>
+    </section>
+
+
+
+</body>
+
